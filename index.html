@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nisha Acharya - Portfolio</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <div class="navigation-bar">
+      <div class="username"><h1><i class="fa fa-user"></i> Nisha Acharya</h1></div>
+      <nav class="navigation-items">
+        <ul>
+          <li><a href="#Home"><i class="fas fa-house"></i> Home</a></li>
+          <li><a href="#Education"><i class="fas fa-graduation-cap"></i> Education</a></li>
+          <li><a href="#Skills"><i class="fas fa-wrench"></i> Skills</a></li>
+          <li><a href="#Projects"><i class="fas fa-diagram-project"></i> Projects</a></li>
+          <li><a href="#Contact"><i class="fas fa-envelope"></i> Contact</a></li>
+        </ul>
+      </nav>
+      <div class="theme-toggle" id="themeToggle"><i class="fas fa-moon"></i></div>
+      <div class="hamburger-menu"><i class="fas fa-bars"></i></div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section>
+      <div class="main-top" id="Home">
+        <div class="main-top-left">
+          <h1 class="main-heading">Hello, I'm Nisha Acharya</h1>
+          <div class="main-description">
+            <p>BSc (Hons) Computing (BIT)</p>
+            <p>Student of IIC College</p>
+          </div>
+          <div class="main-button">
+            <button class="btn" onclick="scrollToSection('Contact')">
+              <i class="fas fa-paper-plane"></i> Get in touch
+            </button>
+            <a href="https://github.com/acharyanisha1234/" target="_blank" class="btn btn-github">
+              <i class="fab fa-github"></i> View GitHub
+            </a>
+          </div>
+        </div>
+        <div class="main-top-right">
+          <img src="c:\Users\acer\Downloads\Nisha Acharya.png" alt="Nisha Acharya" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Education Section -->
+    <section>
+      <div class="education" id="Education">
+        <h1 class="section-heading">Education</h1>
+        <div class="education-details">
+          <div class="education-item">
+            <i class="fas fa-university"></i>
+            <h2>+2 in Science (Biology)</h2>
+            <p class="edu-date">August 2022 - March 2024</p>
+            <p class="edu-place">Arniko Awasiya Secondary College</p>
+            <p class="edu-location">Biratnagar-10, Tintoliya, Arnikopath (Morang, Nepal)</p>
+          </div>
+          <div class="education-item">
+            <i class="fas fa-university"></i>
+            <h2>BSc (Hons) Computing</h2>
+            <p class="edu-date">September 2024 - Present</p>
+            <p class="edu-place">London Metropolitan University</p>
+            <p class="edu-place">Itahari International College (IIC)</p>
+            <p class="edu-location">Sundarharaicha-4, Dulari (Morang, Nepal)</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <div class="skills" id="Skills">
+      <h1 class="section-heading">Skills</h1>
+      <div class="skills-grid">
+        <div class="skills-item"><i class="fas fa-lightbulb"></i><h2>Soft Skills</h2><p>Problem-solving, Team Collaboration, Communication, Time Management, Critical Thinking</p></div>
+        <div class="skills-item"><i class="fas fa-code"></i><h2>Programming Languages</h2><p>JavaScript, Java, Python, C++</p></div>
+        <div class="skills-item"><i class="fab fa-node-js"></i><h2>Backend Development</h2><p>Node.js, Express.js, REST APIs</p></div>
+        <div class="skills-item"><i class="fas fa-database"></i><h2>Databases</h2><p>PostgreSQL, MongoDB, MySQL</p></div>
+        <div class="skills-item"><i class="fab fa-git-alt"></i><h2>Tools & Technologies</h2><p>Git, GitHub, VS Code, Postman, MongoDB Compass</p></div>
+        <div class="skills-item"><i class="fab fa-react"></i><h2>Frontend Development</h2><p>React.js, HTML, CSS, Tailwind CSS, Responsive Web Design, UI/UX Design</p></div>
+      </div>
+    </div>
+
+    <!-- Projects Section -->
+    <section>
+      <div class="projects" id="Projects">
+        <h1 class="section-heading">Projects</h1>
+        <div class="projects-details">
+          <div class="projects-item"><i class="fas fa-shopping-cart"></i><h2>Ecommerce Website (Zen Time)</h2><p>Responsive e‑commerce for watches. Stack: HTML, CSS, JS<br /><a href="https://github.com/acharyanisha1234/Zen-Time.git" target="_blank">View on GitHub</a></p></div>
+          <div class="projects-item"><i class="fas fa-heartbeat"></i><h2>Health‑Based Social Networking Platform (SwasthaSangai)</h2><p>Health platform with messaging, video calls, donation, AI chatbot. Stack: PostgreSQL, Express, React, Node, Socket.IO, WebRTC<br /><a href="https://github.com/acharyanisha1234/Swastha-Sangai.git" target="_blank">View on GitHub</a></p></div>
+          <div class="projects-item"><i class="fas fa-dumbbell"></i><h2>Gym Management System</h2><p>Java Swing + MySQL, attendance, membership, payments.<br /><a href="https://github.com/acharyanisha1234/Gym-Management-System.git" target="_blank">View on GitHub</a></p></div>
+          <div class="projects-item"><i class="fas fa-laptop-code"></i><h2>Academic Coursework Projects</h2><p>Java, Python, C++, MySQL – OOP, DBMS, file handling.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section>
+      <div class="contact" id="Contact">
+        <h1 class="section-heading">Contact</h1>
+        <div class="contact-form">
+          <form id="contactForm" onsubmit="handleSubmit(event)">
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" id="name" required />
+              <span class="error" id="nameError"></span>
+
+              <label for="email">Email</label>
+              <input type="email" id="email" required />
+              <span class="error" id="emailError"></span>
+
+              <label for="message">Message</label>
+              <textarea id="message" required></textarea>
+              <span class="error" id="messageError"></span>
+
+              <button type="submit" class="btn">Send Message</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="footer-content">
+        <div class="footer-section about">
+          <h2><i class="fas fa-user-circle"></i> About</h2>
+          <p>BSc (Hons) Computing student at Itahari International College. Passionate about full‑stack development.</p>
+        </div>
+        <div class="footer-section links">
+          <h2><i class="fas fa-link"></i> Quick Links</h2>
+          <ul>
+            <li><a href="#Home">Home</a></li>
+            <li><a href="#Education">Education</a></li>
+            <li><a href="#Skills">Skills</a></li>
+            <li><a href="#Projects">Projects</a></li>
+            <li><a href="#Contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-section contact-info">
+          <h2><i class="fas fa-address-card"></i> Contact</h2>
+          <p><i class="fas fa-phone"></i> +977 - 9761008641</p>
+          <p><i class="fab fa-github"></i> <a href="https://github.com/acharyanisha1234/" target="_blank">GitHub</a></p>
+          <p><i class="fas fa-envelope"></i> <a href="mailto:acharyanisha2063@gmail.com">acharyanisha2063@gmail.com</a></p>
+          <p><i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/nisha-acharya-8711b4400" target="_blank">LinkedIn</a></p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 Nisha Acharya. All rights reserved.</p>
+      </div>
+    </footer>
+  </main>
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
